@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Proyecto de análisis estadístico de ingresos y proyección de ventas de Barbería Beliver, sede Laureles.">
+<title>Análisis de ingresos y proyección de ventas | Juan Sebastián Lozano</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--ink:#172033;--muted:#5f6b7a;--accent:#315efb;--soft:#eef3ff;--line:#e3e8f0}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+.wrap{max-width:1050px;margin:auto;padding:0 22px}.hero{background:linear-gradient(135deg,#10182c,#263e82);color:white;padding:64px 0 55px}
+.badge{display:inline-block;border:1px solid #ffffff44;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:bold;text-transform:uppercase}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.06;margin:18px 0 12px;max-width:900px}.hero p{font-size:18px;color:#dce4f7;max-width:780px}.author{font-weight:bold}
+main{padding:34px 0 65px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
+.kpi,section{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 25px #14213d12}
+.kpi{padding:17px}.num{font-size:25px;font-weight:800;color:var(--accent)}.label{font-size:13px;color:var(--muted)}
+section{padding:27px;margin:18px 0}h2{margin:0 0 12px;font-size:25px}h3{font-size:17px;margin:20px 0 7px}
+p,li{color:#344054}table{width:100%;border-collapse:collapse;margin-top:14px;font-size:14px}th,td{text-align:left;padding:11px;border-bottom:1px solid var(--line)}th{background:#f7f9fc}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:25px}.tag{display:inline-block;background:var(--soft);color:#2446ad;padding:5px 9px;border-radius:8px;margin:4px;font-size:13px;font-weight:bold}
+.callout{border-left:4px solid var(--accent);background:var(--soft);padding:14px 16px;border-radius:9px;margin-top:15px}
+.bar{margin:15px 0}.barline{height:18px;background:#e9edf3;border-radius:20px;overflow:hidden}.fill{height:100%;background:var(--accent);border-radius:20px}.bar strong{font-size:13px}
+footer{text-align:center;color:var(--muted);padding:5px 0 35px;font-size:13px}
+@media(max-width:800px){.grid{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}@media(max-width:500px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<span class="badge">Proyecto de análisis de datos · Estadística básica</span>
+<h1>Análisis de ingresos mensuales y proyección de ventas</h1>
+<p>Barbería Beliver – Sede Laureles, Medellín. Estudio cuantitativo descriptivo con análisis de frecuencias, probabilidad y regresión lineal.</p>
+<div class="author">Juan Sebastián Lozano Romero</div>
+</div></header>
+
+<main class="wrap">
+<div class="grid">
+<div class="kpi"><div class="num">408</div><div class="label">servicios estimados / mes base</div></div>
+<div class="kpi"><div class="num">$12,65 M</div><div class="label">ingreso mensual base</div></div>
+<div class="kpi"><div class="num">530</div><div class="label">servicios proyectados en diciembre</div></div>
+<div class="kpi"><div class="num">$16,43 M</div><div class="label">ingreso proyectado</div></div>
+</div>
+
+<section><h2>Resumen</h2>
+<p>El proyecto analiza los ingresos mensuales generados por los tres barberos de Barbería Beliver, sede Laureles, y estudia cómo la cantidad de servicios, la distribución de tipos de corte y la demanda de fines de semana afectan los ingresos.</p>
+<p>Se aplicaron herramientas de estadística básica, media ponderada, tablas de doble entrada, probabilidad y regresión lineal para estimar el comportamiento de las ventas y proyectar diciembre.</p>
+<div class="callout"><strong>Objetivo:</strong> convertir registros de servicios y precios en información útil para interpretar ingresos, detectar patrones y proponer acciones comerciales.</div>
+</section>
+
+<section><h2>Metodología</h2><div class="two">
+<div><h3>Enfoque</h3><p>Cuantitativo descriptivo, basado en registros y observación del comportamiento habitual de la barbería.</p>
+<h3>Proceso</h3><ul><li>Recolección de información.</li><li>Diseño y aplicación de encuesta.</li><li>Organización y tabulación.</li><li>Análisis de frecuencias y porcentajes.</li><li>Medidas de tendencia central y dispersión.</li><li>Representación gráfica.</li><li>Proyección lineal e interpretación.</li></ul></div>
+<div><h3>Técnicas estadísticas</h3><span class="tag">Tablas de frecuencia</span><span class="tag">Media</span><span class="tag">Mediana</span><span class="tag">Moda</span><span class="tag">Rango</span><span class="tag">Desviación estándar</span><span class="tag">Probabilidad</span><span class="tag">Regresión lineal</span>
+<h3>Variables</h3><ul><li>Servicios diarios y por tipo.</li><li>Ingresos diarios y mensuales.</li><li>Distribución entre barberos.</li><li>Demanda semanal y de fin de semana.</li><li>Calificación del servicio.</li></ul></div>
+</div></section>
+
+<section><h2>Distribución de servicios</h2>
+<p>La estimación mensual del mes base fue de 408 servicios.</p>
+<table><thead><tr><th>Servicio</th><th>Participación</th><th>Servicios / mes</th><th>Precio</th></tr></thead><tbody><tr><td>Corte y barba</td><td>40%</td><td>163</td><td>$ 40.000</td></tr><tr><td>Corte sencillo</td><td>40%</td><td>163</td><td>$ 30.000</td></tr><tr><td>Solo barba</td><td>20%</td><td>82</td><td>$ 15.000</td></tr></tbody></table>
+<div class="callout"><strong>Hallazgo:</strong> el 80 % de los servicios estimados incluye corte: corte y barba + corte sencillo.</div>
+</section>
+
+<section><h2>Ingreso mensual base</h2><div class="two">
+<div><h3>Volumen</h3><p>Día de semana: 3 barberos × 4 servicios = <strong>12 servicios/día</strong>.</p><p>Fin de semana: 3 barberos × 6 servicios = <strong>18 servicios/día</strong>.</p><p>Mes: (12 × 22) + (18 × 8) = <strong>408 servicios</strong>.</p></div>
+<div><h3>Ingreso</h3><p>Precio promedio ponderado: <strong>$31.000 por servicio</strong>.</p><p>Ingreso total estimado: <strong>$12.648.000/mes</strong>.</p><p>División 50/50: dueño <strong>$6.324.000</strong>; barberos <strong>$6.324.000</strong> en total.</p></div>
+</div></section>
+
+<section><h2>Ingresos diarios estimados</h2>
+<div class="bar"><strong>Día de semana · $372.000</strong><div class="barline"><div class="fill" style="width:67%"></div></div></div>
+<div class="bar"><strong>Fin de semana · $558.000</strong><div class="barline"><div class="fill" style="width:100%"></div></div></div>
+<div class="callout"><strong>Regresión:</strong> R = 31.000 × S, donde S es el número de servicios diarios y R el ingreso diario. Bajo las condiciones del proyecto, R² = 1,00.</div>
+</section>
+
+<section><h2>Proyección para diciembre</h2>
+<p>El proyecto utiliza un incremento estimado del <strong>30 % en la demanda</strong> durante diciembre respecto al mes base.</p>
+<div class="grid">
+<div class="kpi"><div class="num">530</div><div class="label">servicios proyectados</div></div>
+<div class="kpi"><div class="num">$31.000</div><div class="label">precio promedio / servicio</div></div>
+<div class="kpi"><div class="num">$16,43 M</div><div class="label">ingreso proyectado</div></div>
+<div class="kpi"><div class="num">≈$2,74 M</div><div class="label">ingreso / barbero</div></div>
+</div>
+</section>
+
+<section><h2>Resultados estadísticos</h2><div class="two">
+<div><h3>Tendencia central</h3><p><strong>Media:</strong> 27,00</p><p><strong>Mediana:</strong> 27,00</p><p><strong>Moda:</strong> 24</p></div>
+<div><h3>Dispersión</h3><p><strong>Rango:</strong> 6</p><p><strong>Desviación estándar:</strong> 2,45</p></div>
+</div>
+<div class="callout"><strong>Encuesta:</strong> 85 % calificó el servicio como “bueno”, 10 % como “decente” y 5 % como “malo”.</div>
+</section>
+
+<section><h2>Conclusiones y aplicación</h2>
+<ul><li>El mes típico se estima en aproximadamente $12.648.000 de ingresos y diciembre en $16.430.000.</li><li>Cada servicio aporta, bajo los supuestos del proyecto, un promedio de $31.000 al ingreso total.</li><li>El ingreso mensual estimado por barbero pasa de aproximadamente $2.108.000 a $2.738.333 en diciembre.</li><li>Registrar diariamente los servicios por tipo y barbero permitiría refinar el modelo y medir mejor la demanda.</li><li>El análisis puede apoyar decisiones sobre promociones, horarios, reservas y mezcla de servicios.</li></ul>
+</section>
+
+<section><h2>Valor como proyecto de Analista de Datos</h2>
+<p>Este proyecto demuestra un flujo completo de análisis: <strong>recolección → organización → análisis descriptivo → visualización → modelamiento → proyección → interpretación → recomendación</strong>.</p>
+<span class="tag">Análisis estadístico</span><span class="tag">Análisis de demanda</span><span class="tag">Proyección de ventas</span><span class="tag">Visualización</span><span class="tag">KPIs e ingresos</span><span class="tag">Toma de decisiones</span><span class="tag">Hojas de cálculo</span>
+</section>
+</main>
+<footer>Proyecto final de Estadística Básica · Docente: Doris Helena Velázquez · Barbería Beliver, sede Laureles</footer>
+</body></html>

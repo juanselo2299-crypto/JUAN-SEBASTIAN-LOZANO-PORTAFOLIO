@@ -4,6 +4,7 @@ Portafolio profesional Analista de datos
 
 *  **[Análisis Financiero y Pipeline ETL Automatizado (Andina Comercial)](./proyectos/andina_comercial_etl/LÉAME.md)**
   Proyecto "End-to-End" automatizando la ingesta de datos con Python hacia Google Sheets, y modelado en Power BI para el análisis de pérdidas y ganancias (P&L).
-
+*  **[Análisis Estadístico y Proyección de Ventas (Barbería Beliver)](./proyectos/estadistica_beliver/README.md)**
+  Estudio cuantitativo descriptivo aplicando probabilidad, distribuciones de frecuencia y modelos de regresión lineal para proyecciones de ingresos en temporada alta.
 
   
